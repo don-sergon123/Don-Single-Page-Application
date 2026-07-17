@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don's Dictionary App</title>
+</head>
+<body>
+    <header>
+        <h1>Dictionary App</h1>
+        <p>Search for any English word.</p>
+    </header>
+
+    <main>
+        <form id="searchForm">
+
+            <input
+                type="text"
+                id="wordInput"
+                placeholder="Look for any word...."
+                aria-label="Search word"
+                required
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+        <section id="results">
+
+            <h2 id="word"></h2>
+
+            <p id="pronunciation"></p>
+
+            <audio id="audioPlayer" controls></audio>
+
+            <div id="definitions">
+
+            </div>
+
+            <div id="synonyms">
+    
+            </div>
+
+            <p id="errorMessage"></p>
+
+        </section>
+
+    </main>
+</body>
+</html>
+</body>
+</html>
