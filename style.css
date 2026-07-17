@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Google Sans, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #0077cc;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #005fa3;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+
+#results {
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+}
+
+#word {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#pronunciation {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#audioPlayer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#definitions {
+    margin-bottom: 20px;
+}
+
+.definition {
+    background-color: #eef6ff;
+    padding: 12px;
+    border-left: 4px solid #0077cc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#synonyms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.synonym {
+    background-color: #0077cc;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+#errorMessage {
+    color: red;
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
