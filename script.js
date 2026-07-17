@@ -21,6 +21,8 @@ searchForm.addEventListener("submit", function (event) {
     }
 
     clearResults();
+    errorMessage.textContent = "Searching...";
+
     getWord(searchWord);
 });
 
@@ -42,6 +44,8 @@ async function getWord(searchWord) {
 }
 
 function displayWord(data) {
+
+    errorMessage.textContent = "";
 
     const entry = data[0];
 

@@ -95,6 +95,7 @@ button:hover {
 }
 
 #audioPlayer {
+    display: none;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -126,7 +127,7 @@ button:hover {
 }
 
 #errorMessage {
-    color: red;
+    color: black;
     margin-top: 15px;
     text-align: center;
 }
